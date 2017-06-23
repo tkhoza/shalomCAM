@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="assets/js/vegas/vegas.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <script>
+        $(document)
+            .ready(function () {
+
+                // fix menu when passed
+                $('.masthead')
+                    .visibility({
+                        once: false,
+                        onBottomPassed: function () {
+                            $('.fixed.menu').transition('fade in');
+                        },
+                        onBottomPassedReverse: function () {
+                            $('.fixed.menu').transition('fade out');
+                        }
+                    });
+
+                // create sidebar and attach to menu open
+                $('.ui.sidebar')
+                    .sidebar('attach events', '.toc.item');
+
+            });
+    </script>
+
+</head>
+
+<body>
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+
+            <div class="ui text container">
+                <div href="#" class="header item">
+                    <img class="logo" src="assets/images/candy_logo.png"> Candy Clic
+                </div>
+            </div>
+
+            <a class="active item">Home</a>
+            <a href="browse-video.html" class="item">Video Library</a>
+            <a class="item">Corporate</a>
+            <a class="item">Creators</a>
+            <a class="item">Marketplace</a>
+            <div class="ui input item">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical inverted sidebar menu">
+        <a class="active item">Home</a>
+        <a href="browse-video.html" class="item">Video Library</a>
+        <a class="item">Corporate</a>
+        <a class="item">Creators</a>
+        <a class="item">Marketplace</a>
+        <a class="item">Login</a>
+        <a class="item">Signup</a>
+    </div>
+
+
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div id="sliding" class="ui inverted vertical masthead center aligned segment">
+
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item">
+          <i class="sidebar icon"></i>
+        </a>
+
+
+
+                    <a class="active item">Home</a>
+                    <a href="browse-video.html" class="item">Video Library</a>
+                    <a class="item">Corporate</a>
+                    <a class="item">Creators</a>
+                    <a class="item">Marketplace</a>
+                    <div class="right item">
+                        <a class="ui inverted button">Log in</a>
+                        <a class="ui inverted button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                    Imagine-a-Company
+                </h1>
+                <h2>Sign up your own Video Gallery, branded with your corporate identity.</h2>
+                <div class="ui huge primary button" style="background-color: #1dbbb0;">Get Started, it's Free <i class="right arrow icon"></i></div>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column">
+                        <h3 class="ui header">MARKETPLACE</h3>
+                        <p>A place where organisations can find our very best creators, no matter where in the world they are..</p>
+
+                        <h3 class="ui header">Connect</h3>
+                        <p>Find creators by style, cost, location, language &amp; schedule, or submit a proposal &amp; wait for our creators to find you.</p>
+                    </div>
+                    <div class="six wide right floated column">
+                        <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center aligned column">
+                        <a class="ui huge button primary">Learn More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui vertical stripe quote segment nj-vertical-section">
+            <div class="ui equal width stackable internally celled grid">
+                <div class="center aligned row">
+                    <div class="column">
+                       <iframe src="https://player.vimeo.com/video/213996803?color=ffffff&portrait=0" width="640" height="270" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="column">
+                        <h3>CREATORS</h3>
+                        <p>
+                            Animators, videographers, writers, voice-over artists musicians, 
+                            &amp; translators collaborate with creators from around the globe on Content videos for our Library &amp; earn ongoing licence fee income.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui text container">
+                <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
+                <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing
+                    by providing massive amounts of whitespace and generic content that can seem massive, monolithic and
+                    worth your attention.</p>
+                <a class="ui large button">Read More</a>
+                <h4 class="ui horizontal header divider">
+                    <a href="#">Case Studies</a>
+                </h4>
+                <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
+                <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true.
+                    It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
+                <a class="ui large button">I'm Still Quite Interested</a>
+            </div>
+        </div>
+
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">About</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Sitemap</a>
+                            <a href="#" class="item">Contact Us</a>
+                            <a href="#" class="item">Religious Ceremonies</a>
+                            <a href="#" class="item">Gazebo Plans</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">Services</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">Banana Pre-Order</a>
+                            <a href="#" class="item">DNA FAQ</a>
+                            <a href="#" class="item">How To Access</a>
+                            <a href="#" class="item">Favorite X-Men</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header">Footer Header</h4>
+                        <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/vegas/vegas.min.js"></script>
+
+<script>
+    $("#sliding").vegas({
+        transition: 'blur2',
+        color: 'red',
+        overlay: 'assets/js/vegas/overlays/05.png',
+        slides: [{
+                src: "assets/images/unsplash2.jpg"
+            },
+            {
+                src: "assets/images/unsplash3.jpg"
+            },
+            {
+                src: "assets/images/unsplash4.jpg"
+            }
+        ]
+    });
+
+    $elmt.vegas({
+    slides: [
+        {   src: '/img/slide1.jpg' },
+        {   src: '/img/slide2.jpg',
+            video: {
+                src: [
+                    '/videos/video.mp4',
+                    '/videos/video.webm',
+                    '/videos/video.ogv'
+                ],
+                loop: false,
+                mute: true
+            }
+        }
+    ]
+});
+</script>
+
+</html>

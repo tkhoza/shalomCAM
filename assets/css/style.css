@@ -1,0 +1,207 @@
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe .button+h3,
+.ui.vertical.stripe p+h3 {
+    margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+    padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+
+/** Custome style*/
+
+.ui.menu a.item:hover {
+    background: #1dbbb0;
+}
+
+.ui.menu .active.item {
+    background: #1dbbb0;
+}
+
+.ui.menu .item:before {
+    background: none;
+}
+
+.ui.secondary.inverted.pointing.menu .active.item {
+    border-color: #1dbbb0;
+    color: #1dbbb0!important;
+    font-size: large;
+}
+
+.ui.secondary.inverted.pointing.menu .item {
+    color: rgba(255,255,255,.9)!important;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.ui.secondary.inverted.pointing.menu {
+     border-width: 0; 
+
+}
+
+.vegas-timer {
+    background-color: #645199;
+    height: 3px;
+}
+
+.ui.primary.button, .ui.primary.buttons .button{
+     background: #1dbbb0;
+}
+
+.nj-vertical-section{
+    background-color: #CCCCCC!important;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+/** Albums to be edit*/
+
+.album-panel {
+    padding: 0;
+}
+
+.album-panel-body {
+    padding: 0;
+}
+
+.album-list {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.album-list li {
+    display: block;
+    float: left;
+    width: 120px;
+    /*height: 125px;*/
+    /*border-width: 1px;
+    border-style: solid;*/
+    margin: 10px;
+    /*Card*/
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+    width: 250px;
+}
+
+.album-list li:hover {
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, .7);
+}
+
+.album-list li div {
+    height: 100%;
+    position: relative;
+}
+
+.album-list li div span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.remove-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
